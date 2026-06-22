@@ -1,0 +1,30 @@
+{
+  "name": "microsoft-vscode",
+  "version": "1.0.0",
+  "description": "A modern Node.js project with CI/CD pipeline",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "echo 'Build completed successfully'",
+    "test": "node --test tests/**/*.test.js",
+    "lint": "eslint src/ tests/",
+    "lint:fix": "eslint src/ tests/ --fix",
+    "format": "prettier --write 'src/**/*.js' 'tests/**/*.js'",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "ci-cd",
+    "github-actions"
+  ],
+  "author": "jvzhu",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
